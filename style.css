@@ -57,9 +57,8 @@ td {
 }
 
 img {
-    height: 40vh;
-    /* width: 50%; */
-    max-width: 100%;
+    height: 100%;
+    max-width: 50vh;
     border: 5px solid rgba(75, 133, 9, 0.39);
 }
 
@@ -72,12 +71,16 @@ img {
     flex-wrap: wrap;
 }
 
+/* Projects are in flex display, so they will wrap to next line if the screen cannot fit all of the projects in one line  */
+#project-gallery {
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+}
+
 .project {
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 2;
+    /* flex-grow: 2; */
     padding: 10px;
     /* flex: 2 1 300px; */
 }
@@ -85,8 +88,9 @@ img {
 .textbox {
     background-color: #B9D09F;
     line-height: 10px;
-    padding: 10px;
+    padding: 50px;
     position: absolute;
+    /* vertical-align: center; */
     bottom: 60px;
     left: 20px;
 }
