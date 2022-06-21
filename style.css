@@ -58,7 +58,7 @@ td {
 
 img {
     height: 40vh;
-    width: 50%;
+    /* width: 50%; */
     max-width: 100%;
     border: 5px solid rgba(75, 133, 9, 0.39);
 }
@@ -87,7 +87,7 @@ img {
     line-height: 10px;
     padding: 10px;
     position: absolute;
-    bottom: 20px;
+    bottom: 60px;
     left: 20px;
 }
 
