@@ -19,12 +19,12 @@ header {
 }
 
 /* Styles the hyperlinks to the section back to regular color and removes the default underline */
-header a {
+a {
     color: rgba(247, 134, 81);
     text-decoration: none;
 }
 
-header a:hover {
+a:hover {
     color: #B9D09F;
 }
 
@@ -41,7 +41,7 @@ nav {
 nav li {
     display: inline-block;
     font-size: 25px;
-    margin-right: 80px;
+    margin: 1%;
     /* text-decoration: underline; */
 }
 
@@ -69,13 +69,12 @@ table {
 
 td {
     font-size: 20px;
-    padding-right: 10%;
     line-height: 30px;
 }
 
 img {
     height: 100%;
-    max-height: 500px;
+    max-height: 50vh;
     max-width: 50vh;
     border: 5px solid rgba(75, 133, 9, 0.39);
 }
@@ -123,22 +122,25 @@ img {
     padding-left: 0px;
 }
 
+/* .contact-info a {
+    color: rgba(247, 134, 81);
+    text-decoration: none;
+} */
+
 .contact-info li {
     display: inline-block;
 }
 
 #hero {
     background-image: url("./asset/images/henry-be-IicyiaPYGGI-unsplash.jpg");
-    /* Credit: Photo by <a href="https://unsplash.com/@henry_be?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Henry Be</a> on <a href="https://unsplash.com/s/photos/nature?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
-    background-size: cover;
     background-position: center;
     margin: 0px;
     height: 300px;
     width: 100%;
 }
 
-/* @media screen and (max-width: ??px) {
-    .project {
-      width: 100%;
+@media screen and (max-width: 540px) {
+    header {
+        width: 100%;
     }
-  } */
+  }
