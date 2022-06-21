@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: monospace;
 }
@@ -6,7 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    padding: 20px;
     color: rgba(247, 134, 81);
     background-color: rgba(0, 0, 0, 0.856);
 }
@@ -20,18 +23,30 @@ nav {
 nav li {
     display: inline-block;
     font-size: 25px;
-    margin-right: 30px;
+    margin-right: 80px;
+    /* text-decoration: underline; */
 }
 
+
+/*  */
 h1 {
-    display: inline-block;
-    font-size: 50px;
-    margin-left: 50px;
+    display: inline;
+    color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(247, 134, 81);
+    font-size: 60px;
+    text-align: right;
+    width: 400px;
+    padding-right: 15px;
+    line-height: 80px;
+    font-family: Georgia, Times, 'Times New Roman', serif
+}
+
+p {
+    font-family: Helvetica, sans-serif;
 }
 
 table {
     width: 100%;
-    padding-top: 20px;
     border-spacing: 50px;
 }
 
@@ -41,12 +56,39 @@ td {
     line-height: 30px;
 }
 
+img {
+    height: 40vh;
+    width: 50%;
+    max-width: 100%;
+    border: 5px solid rgba(75, 133, 9, 0.39);
+}
+
 .section-header {
     font-size: 40px;
     text-align: right;
-    border-right: 5px solid rgb(247, 134, 81);
-    padding: 50px;
-    max-width: 20%;
+    border-right: 5px solid rgb(75, 133, 9);
+    padding-right: 50px;
+    vertical-align: text-top;
+    flex-wrap: wrap;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 2;
+    padding: 10px;
+    /* flex: 2 1 300px; */
+}
+
+.textbox {
+    background-color: #B9D09F;
+    line-height: 10px;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 .contact-info {
@@ -68,3 +110,9 @@ td {
     height: 300px;
     width: 100%;
 }
+
+/* @media screen and (max-width: ??px) {
+    .project {
+      width: 100%;
+    }
+  } */
