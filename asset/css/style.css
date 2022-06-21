@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+header {
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+    color: aliceblue;
+    background-color: black;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#hero {
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+}
