@@ -27,6 +27,7 @@ a {
 
 a:hover {
     color: #B9D09F;
+    border-bottom: 2px solid #B9D09F;
 }
 
 .project:hover  {
@@ -126,7 +127,8 @@ img:hover {
 .contact-info {
     display: flex;
     justify-content: space-between;
-    padding-left: 0px;
+    padding-left: 2%;
+    padding-right: 5%;
 }
 
 .contact-info li {
