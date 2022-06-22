@@ -8,6 +8,7 @@ html {
 
 body {
     font-family: monospace;
+    color: rgba(0, 0, 0, 0.856);
     /* width: 100%; */
 }
 
@@ -17,6 +18,12 @@ header {
     font-size: 20px;
     color: rgba(247, 134, 81);
     background-color: rgba(0, 0, 0, 0.856);
+}
+
+main {
+    width: 87%;
+    margin: auto;
+    
 }
 
 /* Styles the hyperlinks to the section back to regular color and removes the default underline */
@@ -95,10 +102,11 @@ img:hover {
 }
 
 .section-header {
-    font-size: 40px;
+    color: rgba(0, 0, 0, 0.856);
+    font-size: 60px;
     text-align: right;
     border-right: 5px solid rgb(75, 133, 9);
-    padding-right: 50px;
+    padding-right: 2%;
     vertical-align: text-top;
     flex-wrap: wrap;
 }
@@ -122,7 +130,7 @@ img:hover {
 .project-desc {
     background-color: #B9D09F;
     line-height: 10px;
-    padding: 10px;
+    padding: 1%;
     position: absolute;
     /* vertical-align: center; */
     top: 20%;
@@ -157,7 +165,7 @@ img:hover {
     bottom: 20px;
     right: 10%;
     background-color: rgba(247, 134, 81);
-    color: rgba(0, 0, 0, 0.856)e;
+    color: rgba(0, 0, 0, 0.856);
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1% 2%;
