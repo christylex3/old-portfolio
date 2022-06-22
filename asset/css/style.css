@@ -27,6 +27,9 @@ a {
 
 a:hover {
     color: #B9D09F;
+}
+
+nav a:hover {
     border-bottom: 2px solid #B9D09F;
 }
 
@@ -46,6 +49,9 @@ nav a {
     border-bottom: 2px solid rgba(247, 134, 81);
 }
 
+.contact-info a:hover {
+    border-bottom: 2px solid #B9D09F;
+}
 
 h1 {
     display: inline;
