@@ -58,6 +58,10 @@ h1 {
     font-family: Georgia, Times, 'Times New Roman', serif
 }
 
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 p {
     font-family: Helvetica, sans-serif;
 }
