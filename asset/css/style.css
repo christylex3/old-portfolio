@@ -103,7 +103,7 @@ img {
     flex-basis: 100%;
 }
 
-.textbox {
+.project-desc {
     background-color: #B9D09F;
     line-height: 10px;
     padding: 10px;
@@ -121,11 +121,6 @@ img {
     padding-left: 0px;
 }
 
-/* .contact-info a {
-    color: rgba(247, 134, 81);
-    text-decoration: none;
-} */
-
 .contact-info li {
     display: inline-block;
 }
@@ -133,9 +128,23 @@ img {
 #hero {
     background-image: url("../images/henry-be-IicyiaPYGGI-unsplash.jpg");
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
     margin: 0px;
     height: 300px;
     width: 100%;
+}
+
+#hero-text p {
+    position: absolute;
+    bottom: 20px;
+    right: 10%;
+    background-color: rgba(247, 134, 81);
+    color: rgba(0, 0, 0, 0.856)e;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1% 2%;
 }
 
 /* @media screen and (max-width: 1200px) {
