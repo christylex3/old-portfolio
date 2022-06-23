@@ -26,13 +26,15 @@ nav {
 }
 
 nav > a {
-    font-size: 25px;
-    margin-right: 80px;
+    font-size: 2rem;
+    margin-right: 5rem;
     border-bottom: 2px solid var(--orange);
 }
 
+
+/* Hovering links in nar bar turns it green and bounces a bit */
 nav a:hover {
-    border-bottom: 2px solid #B9D09F;
+    border-bottom: 0.3rem solid #B9D09F;
 }
 
 h1 {
@@ -40,23 +42,23 @@ h1 {
     font-family: Georgia, Times, 'Times New Roman', serif;
     color: var(--soft-black);
     background-color: var(--orange);
-    font-size: 50px;
+    font-size: 3.5rem;
     text-align: right;
     width: 400px;
-    padding-right: 15px;
-    line-height: 80px;
+    padding-right: 1rem;
+    line-height: 1.5;
 }
 
 h2 {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 50px;
+    font-size: 3rem;
     text-align: right;
     color: #000000da;
 }
 
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     /* subject to change once I fix my  */
 }
 
@@ -74,6 +76,21 @@ a:hover {
     color: var(--light-green);
 }
 
+img {
+    /* height: 100px;
+    width: 100px; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid var(--dark-green);
+    opacity: 0.7;
+    /* padding-left: 2%; */
+}
+
+img:hover {
+    opacity: 1;
+}
+
 .top-header {
     display: flex;
     justify-content: space-between;
@@ -82,10 +99,30 @@ a:hover {
     background-color: var(--soft-black);
 }
 
-
-
 /* Contact info lines up in a row and centered vertically */
-.contact-info2 {
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 3%;
+}
+
+.section-header {
+    flex-basis: 25%;
+    padding-right: 5rem;
+    border-right: 5px solid var(--dark-green);
+    /* vertical-align: top; */
+}
+
+.section-body {
+    flex-basis: 70%;
+    line-height: 1.75;
+    font-size: 1.5rem;
+}
+
+.contact-info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -94,8 +131,28 @@ a:hover {
     align-items: center;
 }
 
-.contact-info2 a:hover {
+.contact-info a:hover {
     border-bottom: 2px solid var(--light-green);
+}
+
+.project {
+    position: relative;
+    padding: 2% 5%;
+    flex-basis: 50%;
+}
+
+.project:hover  {
+    background-color: var(--dark-green);
+}
+
+.project-info {
+    background-color: var(--light-green);
+    line-height: 0.5; 
+    /* fix line height */
+    padding: 1% 2%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
 
 #hero {
@@ -120,125 +177,18 @@ a:hover {
     padding: 1% 2%;
 }
 
-.section-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 5%;
-}
-
-.section-header2 {
-    flex-basis: 25%;
-    padding-right: 5rem;
-    border-right: 5px solid var(--dark-green);
-    /* vertical-align: top; */
-}
-
-.section-body2 {
-    flex-basis: 70%;
-    line-height: 1.75;
-    font-size: 20px;
-}
-
-#project-gallery2 {
+#project-gallery {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     flex-basis: 70%;
 }
 
-.project2 {
-    position: relative;
-    padding: 2% 5%;
-    flex-basis: 50%;
-}
-
-.project2:hover  {
-    background-color: var(--dark-green);
-}
-
-#first-project2 {
+#first-project {
     /* position: relative; */
     flex-basis: 100%;
 }
 
-
-img {
-    /* height: 100px;
-    width: 100px; */
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border: 5px solid var(--dark-green);
-    opacity: 0.7;
-    /* padding-left: 2%; */
-}
-
-img:hover {
-    opacity: 1;
-}
-
-.project-info {
-    background-color: var(--light-green);
-    line-height: 0.5; 
-    /* fix line height */
-    padding: 1% 2%;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-}
-
-.contact-info a:hover {
-    border-bottom: 2px solid var(--light-green);
-}
-
-.section-header {
-    color: rgba(0, 0, 0, 0.856);
-    font-size: 60px;
-    text-align: right;
-    border-right: 5px solid var(--dark-green);
-    padding-right: 2%;
-    vertical-align: top;
-    flex-wrap: wrap;
-}
-
-/* Projects are in flex display, so they will wrap to next line if the screen cannot fit all of the projects in one line  */
-#project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project {
-    position: relative;
-    padding: 2%;
-    flex-basis: 50%;
-}
-
-.first-project {
-    flex-basis: 100%;
-}
-
-.project-desc {
-    background-color: var(--light-green);
-    line-height: 10px;
-    padding: 1%;
-    position: absolute;
-    top: 20%;
-    left: 20px;
-}
-
-/* Set contact details to be lined up horizontally and to have space between them */
-.contact-info {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 5%;
-}
-
-.contact-info li {
-    display: inline-block;
-}
 
 /* 
 @media screen and (max-width: 1200px) {
