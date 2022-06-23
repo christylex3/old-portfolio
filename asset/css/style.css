@@ -22,6 +22,7 @@ main {
 
 nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -183,12 +184,52 @@ img:hover {
     flex-basis: 100%;
 }
 
-
-/* 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1380px) {
     body {
-        width: 80rem;
+        width: 90rem;
         flex-wrap: wrap;
         overflow-wrap: break-word;
     }
-} */
+
+    .top-header > h1 {
+        display: none;
+    }
+
+    nav a {
+        font-size: 3rem;
+        line-height: 4;
+        padding-left: 5.5rem;
+        border-bottom: none;
+    }
+
+    nav a:hover {
+        border-bottom: none;
+    }
+
+    .section-container, .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .section-header h2 {
+        font-size: 5rem;
+        text-align: left;
+    }
+
+    .section-header {
+        border-right: none;
+    }
+
+    h3 {
+        font-size: 3rem;
+
+    }
+
+    .project-info {
+        font-size: 3rem;
+    }
+}
