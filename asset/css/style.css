@@ -10,7 +10,7 @@ html {
 main {
     width: 80%;
     /* padding-top: 3%; */
-    margin: auto;
+    margin: 2rem auto;
 }
 
 nav {
@@ -18,10 +18,14 @@ nav {
     align-items: center;
 }
 
-nav a {
+nav > a {
     font-size: 25px;
     margin-right: 80px;
     border-bottom: 2px solid rgba(247, 134, 81);
+}
+
+nav a:hover {
+    border-bottom: 2px solid #B9D09F;
 }
 
 h1 {
@@ -45,6 +49,8 @@ h2 {
 
 h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    /* subject to change once I fix my  */
 }
 
 p {
@@ -52,7 +58,7 @@ p {
 }
 
 img {
-    height: 70vh;
+    height: ;
     width: 100%;
     object-fit: cover;
     border: 5px solid rgba(75, 133, 9, 0.39);
@@ -84,7 +90,7 @@ a:hover {
 
 .section-header2 {
     flex-basis: 25%;
-    padding-right: 5%;
+    padding-right: 5rem;
     border-right: 5px solid #4b8509;
     /* vertical-align: top; */
 }
@@ -115,6 +121,20 @@ a:hover {
     background-color: #4b8509;
 }
 
+/* Contact info lines up in a row and centered vertically */
+.contact-info2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+.contact-info2 a:hover {
+    border-bottom: 2px solid #B9D09F;
+}
+
 #hero {
     background-image: url("../images/henry-be-IicyiaPYGGI-unsplash.jpg");
     background-position: center;
@@ -126,7 +146,7 @@ a:hover {
     width: 100%;
 }
 
-#hero-text p {
+#hero-text > p {
     position: absolute;
     bottom: 20px;
     right: 10%;
@@ -147,6 +167,12 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-between; */
+    padding-top: 5%;
+}
+
+#contact-me-section {
+    display: flex;
+    /* flex-wrap: wrap; */
     padding-top: 5%;
 }
 
@@ -191,10 +217,6 @@ body {
 a:hover {
     color: #B9D09F;
 } */
-
-nav a:hover {
-    border-bottom: 2px solid #B9D09F;
-}
 
 /* .project:hover  {
     background-color: #4b8509;
