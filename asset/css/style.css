@@ -74,6 +74,7 @@ h2, h3 {
 
 p {
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -203,17 +204,16 @@ h3 {
     }
 
     nav a {
-        font-size: 3rem;
-        line-height: 4;
-        padding-left: 5.5rem;
+        line-height: 2.5;
     }
 
     .top-header > h1 {
-        display: none;
+        font-size: 6rem;
+        vertical-align: center;
     }
 
     /* Section contents are flexed to column view */
-    .section-container, .contact-info {
+    nav, .section-container, .contact-info {
         flex-direction: column;
     }
 
@@ -222,17 +222,20 @@ h3 {
         text-align: center;
     }
 
+    .section-header {
+        border-right: none;
+    }
+
     .section-header h2 {
         font-size: 5rem;
         text-align: left;
     }
 
-    .section-header {
-        border-right: none;
+    .project-info h3 {
+        font-size: 4rem;
     }
 
-    h3, .project-info, .contact-info {
-        font-size: 3rem;
-
+    nav a, h3, .contact-info, .project-info p {
+        font-size: 3.5rem;
     }
 }
