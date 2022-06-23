@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
 }
+/* Color scheme for website */
+:root {
+    --soft-black: #000000da;
+    --light-green: #B9D09F;
+    --dark-green: #4b8509;
+    --orange: #f78651;
+  }
 
 /*  Allows scrolling to be smooth when clicking on nav links */
 html {
@@ -21,7 +28,7 @@ nav {
 nav > a {
     font-size: 25px;
     margin-right: 80px;
-    border-bottom: 2px solid rgba(247, 134, 81);
+    border-bottom: 2px solid var(--orange);
 }
 
 nav a:hover {
@@ -31,8 +38,8 @@ nav a:hover {
 h1 {
     display: inline;
     font-family: Georgia, Times, 'Times New Roman', serif;
-    color: rgba(0, 0, 0, 0.856);
-    background-color: rgba(247, 134, 81);
+    color: var(--soft-black);
+    background-color: var(--orange);
     font-size: 50px;
     text-align: right;
     width: 400px;
@@ -57,69 +64,25 @@ p {
     font-family: Helvetica, sans-serif;
 }
 
-img {
-    height: ;
-    width: 100%;
-    object-fit: cover;
-    border: 5px solid rgba(75, 133, 9, 0.39);
-    opacity: 0.7;
-    /* padding-left: 2%; */
-}
-
-img:hover {
-    opacity: 1;
-}
-
 a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgba(247, 134, 81);
+    color: var(--orange);
     text-decoration: none;
 }
 
 a:hover {
-    color: #B9D09F;
+    color: var(--light-green);
 }
 
 .top-header {
     display: flex;
     justify-content: space-between;
     font-size: 20px;
-    color: #f78651;
-    background-color: #000000da;
+    color: var(--orange);
+    background-color: var(--soft-black);
 }
 
-.section-header2 {
-    flex-basis: 25%;
-    padding-right: 5rem;
-    border-right: 5px solid #4b8509;
-    /* vertical-align: top; */
-}
 
-.section-body2 {
-    flex-basis: 70%;
-    line-height: 1.75;
-    font-size: 20px;
-}
-
-.project-info {
-    background-color: #B9D09F;
-    line-height: 0.5; 
-    /* fix line height */
-    padding: 1% 2%;
-    position: absolute;
-    top: 20%;
-    left: 5%;
-}
-
-.project2 {
-    position: relative;
-    padding: 2% 5%;
-    flex: 2 1 30%;
-}
-
-.project2:hover  {
-    background-color: #4b8509;
-}
 
 /* Contact info lines up in a row and centered vertically */
 .contact-info2 {
@@ -132,7 +95,7 @@ a:hover {
 }
 
 .contact-info2 a:hover {
-    border-bottom: 2px solid #B9D09F;
+    border-bottom: 2px solid var(--light-green);
 }
 
 #hero {
@@ -150,115 +113,91 @@ a:hover {
     position: absolute;
     bottom: 20px;
     right: 10%;
-    background-color: rgba(247, 134, 81);
-    color: rgba(0, 0, 0, 0.856);
+    background-color: var(--orange);
+    color: var(--soft-black);
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 1% 2%;
 }
 
-#about-me-section {
+.section-container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 5%;
 }
 
-#work-section {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    padding-top: 5%;
+.section-header2 {
+    flex-basis: 25%;
+    padding-right: 5rem;
+    border-right: 5px solid var(--dark-green);
+    /* vertical-align: top; */
 }
 
-#contact-me-section {
-    display: flex;
-    /* flex-wrap: wrap; */
-    padding-top: 5%;
+.section-body2 {
+    flex-basis: 70%;
+    line-height: 1.75;
+    font-size: 20px;
 }
 
 #project-gallery2 {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    flex-basis: 70%;
+}
+
+.project2 {
+    position: relative;
+    padding: 2% 5%;
+    flex-basis: 50%;
+}
+
+.project2:hover  {
+    background-color: var(--dark-green);
 }
 
 #first-project2 {
-    position: relative;
+    /* position: relative; */
     flex-basis: 100%;
 }
 
-/* ------------------ OLD CODE DOWN ------------------ */
 
-/* 
-body {
-    font-family: monospace;
-    color: rgba(0, 0, 0, 0.856);
-} */
-
-/* header {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    color: rgba(247, 134, 81);
-    background-color: rgba(0, 0, 0, 0.856);
-} */
-
-/* main {
-    width: 80%;
-    padding-top: 3%;
-    margin: auto;
-} */
-
-/* Styles the hyperlinks to the section back to regular color and removes the default underline */
-/* a {
-    color: rgba(247, 134, 81);
-    text-decoration: none;
+img {
+    /* height: 100px;
+    width: 100px; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 5px solid var(--dark-green);
+    opacity: 0.7;
+    /* padding-left: 2%; */
 }
 
-a:hover {
-    color: #B9D09F;
-} */
-
-/* .project:hover  {
-    background-color: #4b8509;
-} */
-
-/* Nav will push text to next line if it does not fit on screen */
-/* nav {
-    display: flex;
-    align-items: center;
+img:hover {
+    opacity: 1;
 }
 
-nav a {
-    font-size: 25px;
-    margin-right: 80px;
-    border-bottom: 2px solid rgba(247, 134, 81);
-} */
+.project-info {
+    background-color: var(--light-green);
+    line-height: 0.5; 
+    /* fix line height */
+    padding: 1% 2%;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
 
 .contact-info a:hover {
-    border-bottom: 2px solid #B9D09F;
+    border-bottom: 2px solid var(--light-green);
 }
-
-/* h2 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
-
-/* table {
-    width: 100%;
-    border-spacing: 50px;
-}
-
-td {
-    font-size: 20px;
-    line-height: 30px;
-} */
-
-
 
 .section-header {
     color: rgba(0, 0, 0, 0.856);
     font-size: 60px;
     text-align: right;
-    border-right: 5px solid rgb(75, 133, 9);
+    border-right: 5px solid var(--dark-green);
     padding-right: 2%;
     vertical-align: top;
     flex-wrap: wrap;
@@ -281,7 +220,7 @@ td {
 }
 
 .project-desc {
-    background-color: #B9D09F;
+    background-color: var(--light-green);
     line-height: 10px;
     padding: 1%;
     position: absolute;
