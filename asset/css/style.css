@@ -9,14 +9,13 @@
     --orange: #f78651;
   }
 
-/*  Allows scrolling to be smooth when clicking on nav links */
+/*  Scrolls smoothly to section when clicking on nav links */
 html {
     scroll-behavior: smooth;
 }
 
 main {
     width: 80%;
-    /* padding-top: 3%; */
     margin: 2rem auto;
 }
 
@@ -32,60 +31,67 @@ nav > a {
     border-bottom: 2px solid var(--orange);
 }
 
-
-/* Hovering links in nar bar turns it green and bounces a bit */
-nav a:hover {
-    border-bottom: 0.3rem solid #B9D09F;
-}
-
-h1 {
-    display: inline;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    color: var(--soft-black);
-    background-color: var(--orange);
-    font-size: 3.5rem;
-    text-align: right;
-    width: 400px;
-    padding-right: 1rem;
-    line-height: 1.5;
-}
-
-h2 {
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 3rem;
-    text-align: right;
-    color: #000000da;
-}
-
-h3 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
-}
-
-p {
-    font-family: Helvetica, sans-serif;
-}
-
 a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--orange);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
 }
 
+/* Turns the nav and contact info link to green when mouse hovers over */
 a:hover {
     color: var(--light-green);
 }
 
+/* Nav links gets extra bounce */
+nav a:hover {
+    border-bottom: 0.3rem solid #B9D09F;
+}
+
+/* Project images are set to be slightly transparent */
 img {
+    border: 5px solid var(--dark-green);
     height: 100%;
     width: 100%;
     object-fit: cover;
-    border: 5px solid var(--dark-green);
     opacity: 0.7;
 }
 
+/* When hovering over image, image becomes fully visible (no longer transparent) */
 img:hover {
     opacity: 1;
+}
+
+h1, h2, h3 {
+    color: var(--soft-black);
+}
+
+h1, h2 {
+    text-align: right;
+}
+h2, h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+p {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1 {
+    background-color: var(--orange);
+    display: inline;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding-right: 1rem;
+    width: 400px;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 .top-header {
@@ -95,8 +101,7 @@ img:hover {
     background-color: var(--soft-black);
 }
 
-/* Contact info lines up in a row and centered vertically */
-
+/* About Me, Work, & Contact info sections become flex boxes, so content can wrap texts if needed */
 .section-container {
     display: flex;
     flex-direction: row;
@@ -109,7 +114,6 @@ img:hover {
     flex-basis: 25%;
     padding-right: 5rem;
     border-right: 5px solid var(--dark-green);
-    /* vertical-align: top; */
 }
 
 .section-body {
@@ -127,6 +131,7 @@ img:hover {
     align-items: center;
 }
 
+/* Hovering over contact info adds a light green border-bottom to the content */
 .contact-info a:hover {
     border-bottom: 2px solid var(--light-green);
 }
@@ -137,6 +142,7 @@ img:hover {
     flex-basis: 50%;
 }
 
+/* Hovering over projects highlights the project with a green outline */
 .project:hover  {
     background-color: var(--dark-green);
 }
@@ -150,6 +156,7 @@ img:hover {
     left: 5%;
 }
 
+/* Current placeholder */
 #hero {
     background-image: url("../images/henry-be-IicyiaPYGGI-unsplash.jpg");
     background-position: center;
@@ -172,6 +179,7 @@ img:hover {
     padding: 1rem 2rem;
 }
 
+/* Projects will not overflow the screen */
 #project-gallery {
     display: flex;
     flex-direction: row;
@@ -179,8 +187,8 @@ img:hover {
     flex-basis: 70%;
 }
 
+/* The first (most recent) project will always be larger than the other projects */
 #first-project {
-    /* position: relative; */
     flex-basis: 100%;
 }
 
@@ -188,31 +196,30 @@ img:hover {
     body {
         width: 90rem;
         flex-wrap: wrap;
-        overflow-wrap: break-word;
     }
 
-    .top-header > h1 {
-        display: none;
+    nav a, nav a:hover {
+        border-bottom: none;
     }
 
     nav a {
         font-size: 3rem;
         line-height: 4;
         padding-left: 5.5rem;
-        border-bottom: none;
     }
 
-    nav a:hover {
-        border-bottom: none;
+    .top-header > h1 {
+        display: none;
     }
 
+    /* Section contents are flexed to column view */
     .section-container, .contact-info {
         flex-direction: column;
     }
 
+    /* contact info align by columns for easier view */
     .contact-info {
         text-align: center;
-        font-size: 3rem;
     }
 
     .section-header h2 {
@@ -224,12 +231,8 @@ img:hover {
         border-right: none;
     }
 
-    h3 {
+    h3, .project-info, .contact-info {
         font-size: 3rem;
 
-    }
-
-    .project-info {
-        font-size: 3rem;
     }
 }
