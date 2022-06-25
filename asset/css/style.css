@@ -88,7 +88,7 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 3rem
 }
 
 h3 {
@@ -97,6 +97,7 @@ h3 {
 
 .top-header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     color: var(--orange);
     background-color: var(--soft-black);
@@ -198,22 +199,24 @@ h3 {
         width: 90rem;
         flex-wrap: wrap;
     }
-
+    
     nav a, nav a:hover {
         border-bottom: none;
     }
 
     nav a {
         line-height: 2.5;
+        text-align: center;
     }
 
     .top-header > h1 {
-        font-size: 6rem;
-        vertical-align: center;
+        font-size: 5rem;
+        width: 100%;
+        text-align: center;
     }
 
     /* Section contents are flexed to column view */
-    nav, .section-container, .contact-info {
+    .top-header, .section-container, .contact-info {
         flex-direction: column;
     }
 
@@ -235,7 +238,11 @@ h3 {
         font-size: 4rem;
     }
 
-    nav a, h3, .contact-info, .project-info p {
+    nav a, h3, .contact-info {
         font-size: 3.5rem;
+    }
+
+    .section-body p, .project-info p {
+        font-size: 3rem;
     }
 }
