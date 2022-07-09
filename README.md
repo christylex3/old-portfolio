@@ -5,7 +5,7 @@ This is my personal portfolio website that contains information about me, my wor
 1. Access the repository on GitHub [here](https://github.com/christylex3/portfolio).
 2. Clone it to your computer.
 3. Look for the `portfolio` directory and open it.
-4. Then launch the `index.html` file to see the website, which should look like [this](https://christylex3.github.io/portfolio/).
+4. Then launch the `index.html` file with Visual Studio Code to see the [website](https://christylex3.github.io/portfolio/).
 
 ## Description
 The portfolio website contains:
