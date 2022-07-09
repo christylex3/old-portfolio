@@ -16,8 +16,8 @@ The portfolio website contains:
 ## Usage
 Freely navigate around the website by scrolling and clicking on sections to learn more about me. 
 
-## Additional Pictures
-Here's a glance of my portfolio website:
+## Additional Picture
+Here's a glance at my portfolio website:
 ![Peek at portfolio website](./assets/images/first-page.jpg)
 
 ## Credits
