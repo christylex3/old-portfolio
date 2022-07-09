@@ -47,18 +47,23 @@ nav a:hover {
     border-bottom: 0.3rem solid var(--light-green);
 }
 
-/* Project images are set to be slightly transparent */
-img {
-    border: 5px solid var(--dark-purple);
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.7;
+h1 {
+    background-color: var(--soft-purple);
+    display: inline;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    padding-right: 1rem;
+    width: 400px;
 }
 
-/* When hovering over image, image becomes fully visible (no longer transparent) */
-img:hover {
-    opacity: 1;
+h2 {
+    font-size: 3rem;
+    color: var(--soft-black);
+}
+
+h3 {
+    font-size: 2rem;
 }
 
 h1, h2 {
@@ -78,23 +83,18 @@ p {
     font-size: 1.5rem;
 }
 
-h1 {
-    background-color: var(--soft-purple);
-    display: inline;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    font-size: 3.5rem;
-    line-height: 1.5;
-    padding-right: 1rem;
-    width: 400px;
+/* Project images are set to be slightly transparent */
+img {
+    border: 5px solid var(--dark-purple);
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
 }
 
-h2 {
-    font-size: 3rem;
-    color: var(--soft-black);
-}
-
-h3 {
-    font-size: 2rem;
+/* When hovering over image, image becomes fully visible (no longer transparent) */
+img:hover {
+    opacity: 1;
 }
 
 .top-header {
